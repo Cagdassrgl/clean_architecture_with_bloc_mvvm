@@ -1,3 +1,4 @@
+import 'package:clean_architecture_with_bloc_mvvm/feature/home/view/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Bloc Simple App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Container(),
+      home: const HomeView(),
     );
   }
 }
